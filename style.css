@@ -1,0 +1,185 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./Mountains.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    font-family: "Open Sans", sans-serif;
+}
+
+.welcome-box {
+    background-color: white;
+    position: relative;
+    width: 60%;
+    max-width: 960px;
+    margin: 4em auto;
+}
+
+.welcome-information {
+    padding: 2em 2em 1em 2em;
+}
+
+
+.social-media {
+    background-color: rgba(4, 5, 5, 0.69);
+    padding: 2em;
+}
+
+.welcome-information-image {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+}
+
+.welcome-information-text {
+    display: inline-block;
+    width: 65%;
+    margin-left: 9%;
+    vertical-align: top;
+    position: relative;
+}
+
+.welcome-information-text span {
+    position: relative;
+}
+
+.welcome-information-text span::before {
+    content: '';
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 5px;
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 0 0 10px 10px;
+    border-color: transparent;
+    border-left-color: lightslategrey;
+}
+
+.welcome-information-text-bubble {
+    font-family: inherit;
+    font-weight: 300;
+    color: white;
+    background-color: lightslategrey;
+    padding: 10px 15px;
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+}
+
+.welcome-information-text-introduction {
+    font-family: inherit;
+    font-weight: 200;
+    font-size: 35px;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.76);
+    line-height: 120%;
+}
+
+.welcome-information-text-description {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0;
+    line-height: 200%;
+}
+
+.welcome-information-text-line {
+    color: lightgrey;
+    height: 3px;
+    width: 100%;
+}
+
+.welcome-information-text-personal-information {
+    padding: 1em 2em 1em 2em;
+}
+
+.welcome-information-text-quote-headline {
+    color: rgba(0, 0, 0, 0.84);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 2em 1em 1.5em 1em;
+}
+
+.welcome-information-text-quote {
+    color: rgba(0, 0, 0, 0.58);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 130%;
+    font-size: 18px;
+    
+}
+
+.welcome-information-text-quote-author {
+    color: rgba(0, 0, 0, 0.58);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 130%;
+    font-size: 12px;
+    margin: 1em;
+}
+
+.social-media ul li {
+    display: inline-block;
+}
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px){
+    .welcome-information {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .welcome-information-text {
+        padding: 0;
+    }
+    
+    .welcome-information-image {
+        width: 60%;
+        display: block;
+        margin: auto;
+        padding-top: 40px;
+    }
+
+    .welcome-information-text-bubble {
+        margin: 20px 0 20px 0;
+        float: right;
+        display: none;
+    }
+
+    .welcome-information-text-introduction {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .welcome-information-text-description {
+        overflow: visible;
+        line-height: 100%;
+        display: inline-block;
+        margin: auto;
+        float: right;
+        padding-top: 20px;
+    }
+
+    .social-media ul li {
+        display: inline-block;
+        text-decoration: darkcyan;
+    }
+
+    .social-media ul li a{
+        text-decoration: bisque;
+    }
+
+}
